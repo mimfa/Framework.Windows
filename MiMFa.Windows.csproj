@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF653621-5421-48EA-BE2F-D9194FF71C08}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiMFa.Windows</RootNamespace>
+    <AssemblyName>MiMFa Framework.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MiMFa Framework.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words">
+      <HintPath>C:\Program Files (x86)\MiMFa\Looking For Science\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.23.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\My Work\Commercial Project\Individual\Mr Saadat\MasterCoderRobotArticleSourceCode\MasterCoderRobotArticle\MasterCoderRobotArticle\bin\Release\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Borders.cs" />
+    <Compile Include="Controls\WinForm\Browser\Browser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Browser\StandardWebBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Browser\StandardWebBrowser.Designer.cs">
+      <DependentUpon>StandardWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\ButtonPack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\DefaultPartTaking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\DefaultPartTaking.Designer.cs">
+      <DependentUpon>DefaultPartTaking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\DefaultSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\DefaultSetting.Designer.cs">
+      <DependentUpon>DefaultSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\ProfessionalTopBorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\ProfessionalTopBorder.Designer.cs">
+      <DependentUpon>ProfessionalTopBorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\SimplyCloseTopBorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\SimplyCloseTopBorder.Designer.cs">
+      <DependentUpon>SimplyCloseTopBorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\StandardTopBorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ButtonPack\StandardTopBorder.Designer.cs">
+      <DependentUpon>StandardTopBorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Button\ModernButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Data\DataCell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Data\DataCell.Designer.cs">
+      <DependentUpon>DataCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Data\DataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Data\DataGridView.Designer.cs">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Editor\Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Input\InputBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Input\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\MenuBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\Win32.cs" />
+    <Compile Include="Controls\WinForm\ModernUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ModernUserControl.Designer.cs">
+      <DependentUpon>ModernUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Notification\LogBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Notification\LogBox.Designer.cs">
+      <DependentUpon>LogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Notification\NotificationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Notification\NotificationBar.Designer.cs">
+      <DependentUpon>NotificationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Panel\ScrollablePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Panel\ScrollablePanel.Designer.cs">
+      <DependentUpon>ScrollablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Ribbons\RibbonMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Ribbons\RibbonPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Ribbons\RibbonPanel.Designer.cs">
+      <DependentUpon>RibbonPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\ImageLayers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\ImageLayers.Designer.cs">
+      <DependentUpon>ImageLayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\TabBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\TabBarItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\TabBarItem.Designer.cs">
+      <DependentUpon>TabBarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\BoolBoxButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\BoolBoxButton.Designer.cs">
+      <DependentUpon>BoolBoxButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\LightBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\LightBarButton.Designer.cs">
+      <DependentUpon>LightBarButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\CoordinatesSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\CoordinatesSelector.Designer.cs">
+      <DependentUpon>CoordinatesSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\WinFormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Communication\ChatBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Communication\ChatBox.Designer.cs">
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DatePicker.Designer.cs">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DayCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DayCalendar.Designer.cs">
+      <DependentUpon>DayCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DayDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\DayDetail.Designer.cs">
+      <DependentUpon>DayDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\HourPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\HourPicker.Designer.cs">
+      <DependentUpon>HourPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\IntervalDateSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\IntervalDateSet.Designer.cs">
+      <DependentUpon>IntervalDateSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\IntervalTimeSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\IntervalTimeSet.Designer.cs">
+      <DependentUpon>IntervalTimeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\MeetTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\MeetTime.Designer.cs">
+      <DependentUpon>MeetTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\Timeframe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\Timeframe.Designer.cs">
+      <DependentUpon>Timeframe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\TimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\DateTime\TimePicker.Designer.cs">
+      <DependentUpon>TimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Diagram\PercentBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Diagram\PercentBox.Designer.cs">
+      <DependentUpon>PercentBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\SlidingMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\SlidingMenu.Designer.cs">
+      <DependentUpon>SlidingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\SortableTileMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\SortableTileMenu.Designer.cs">
+      <DependentUpon>SortableTileMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\SubSlidingMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\SubSlidingMenu.Designer.cs">
+      <DependentUpon>SubSlidingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\TopTabMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Menu\TopTabMenu.Designer.cs">
+      <DependentUpon>TopTabMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Panel\iPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Panel\iPanel.Designer.cs">
+      <DependentUpon>iPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Panel\Panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarCycleWait.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarCycleWait.Designer.cs">
+      <DependentUpon>ProgressBarCycleWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarDoubleWithTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarDoubleWithTime.Designer.cs">
+      <DependentUpon>ProgressBarDoubleWithTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarLineWait.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarLineWait.Designer.cs">
+      <DependentUpon>ProgressBarLineWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarStandardWithTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\ProgressBar\ProgressBarStandardWithTime.Designer.cs">
+      <DependentUpon>ProgressBarStandardWithTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Security\RandomNumberBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Security\RandomNumberBoard.Designer.cs">
+      <DependentUpon>RandomNumberBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Security\Security.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\SelectSmile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\SelectSmile.Designer.cs">
+      <DependentUpon>SelectSmile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\ShowIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\ShowIndex.Designer.cs">
+      <DependentUpon>ShowIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\Sub\Address.cs" />
+    <Compile Include="Controls\WinForm\Special\VeiwLogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Special\VeiwLogo.Designer.cs">
+      <DependentUpon>VeiwLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\LevelViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\LevelViewer.Designer.cs">
+      <DependentUpon>LevelViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\StandardBrowserViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\StandardBrowserViewer.Designer.cs">
+      <DependentUpon>StandardBrowserViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\StandardTabPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\StandardTabPage.Designer.cs">
+      <DependentUpon>StandardTabPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tabs\TabPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\DropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\DropDown.Designer.cs">
+      <DependentUpon>DropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\DropDownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\DropDownList.Designer.cs">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TextParameterList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TextParameterList.Designer.cs">
+      <DependentUpon>TextParameterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TextParameter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TextParameter.Designer.cs">
+      <DependentUpon>TextParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\LabelBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\LabelBox.Designer.cs">
+      <DependentUpon>LabelBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\LabelListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\LabelListBox.Designer.cs">
+      <DependentUpon>LabelListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\Button.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\CheckList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\CheckList.Designer.cs">
+      <DependentUpon>CheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\DrawerButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\DrawerButton.Designer.cs">
+      <DependentUpon>DrawerButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\ImportFileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\ImportFileList.Designer.cs">
+      <DependentUpon>ImportFileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\IncrimentInt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\IncrimentInt.Designer.cs">
+      <DependentUpon>IncrimentInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\RadioList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\RadioList.Designer.cs">
+      <DependentUpon>RadioList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\SlideButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\SlideButton.Designer.cs">
+      <DependentUpon>SlideButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\StandardImportFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\StandardImportFile.Designer.cs">
+      <DependentUpon>StandardImportFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\StandardImportImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\StandardImportImage.Designer.cs">
+      <DependentUpon>StandardImportImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\Sub\Address.cs" />
+    <Compile Include="Controls\WinForm\Tools\TabButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TabButton.Designer.cs">
+      <DependentUpon>TabButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TileButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TileButton.Designer.cs">
+      <DependentUpon>TileButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TileList.Designer.cs">
+      <DependentUpon>TileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\Tools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WinForm\Tools\TrackBar.Designer.cs">
+      <DependentUpon>TrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WinForm\WinForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\WinForm\Browser\StandardWebBrowser.resx">
+      <DependentUpon>StandardWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ButtonPack\DefaultPartTaking.resx">
+      <DependentUpon>DefaultPartTaking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ButtonPack\DefaultSetting.resx">
+      <DependentUpon>DefaultSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ButtonPack\ProfessionalTopBorder.resx">
+      <DependentUpon>ProfessionalTopBorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ButtonPack\SimplyCloseTopBorder.resx">
+      <DependentUpon>SimplyCloseTopBorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ButtonPack\StandardTopBorder.resx">
+      <DependentUpon>StandardTopBorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Communication\ChatBox.resx">
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Data\DataGridView.resx">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\DatePicker.resx">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\DayCalendar.resx">
+      <DependentUpon>DayCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\DayDetail.resx">
+      <DependentUpon>DayDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\HourPicker.resx">
+      <DependentUpon>HourPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\IntervalDateSet.resx">
+      <DependentUpon>IntervalDateSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\IntervalTimeSet.resx">
+      <DependentUpon>IntervalTimeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\MeetTime.resx">
+      <DependentUpon>MeetTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\Timeframe.resx">
+      <DependentUpon>Timeframe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\DateTime\TimePicker.resx">
+      <DependentUpon>TimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Diagram\PercentBox.resx">
+      <DependentUpon>PercentBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Input\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Menu\SlidingMenu.resx">
+      <DependentUpon>SlidingMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Menu\SortableTileMenu.resx">
+      <DependentUpon>SortableTileMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Menu\SubSlidingMenu.resx">
+      <DependentUpon>SubSlidingMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Menu\TopTabMenu.resx">
+      <DependentUpon>TopTabMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ModernUserControl.resx">
+      <DependentUpon>ModernUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Notification\LogBox.resx">
+      <DependentUpon>LogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Notification\NotificationBar.resx">
+      <DependentUpon>NotificationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Panel\iPanel.resx">
+      <DependentUpon>iPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Panel\ScrollablePanel.resx">
+      <DependentUpon>ScrollablePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ProgressBar\ProgressBarCycleWait.resx">
+      <DependentUpon>ProgressBarCycleWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ProgressBar\ProgressBarDoubleWithTime.resx">
+      <DependentUpon>ProgressBarDoubleWithTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ProgressBar\ProgressBarLineWait.resx">
+      <DependentUpon>ProgressBarLineWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\ProgressBar\ProgressBarStandardWithTime.resx">
+      <DependentUpon>ProgressBarStandardWithTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Ribbons\RibbonMenu.resx">
+      <DependentUpon>RibbonMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Ribbons\RibbonPanel.resx">
+      <DependentUpon>RibbonPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Security\RandomNumberBoard.resx">
+      <DependentUpon>RandomNumberBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Special\ImageLayers.resx">
+      <DependentUpon>ImageLayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Special\SelectSmile.resx">
+      <DependentUpon>SelectSmile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Special\ShowIndex.resx">
+      <DependentUpon>ShowIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Special\VeiwLogo.resx">
+      <DependentUpon>VeiwLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tabs\LevelViewer.resx">
+      <DependentUpon>LevelViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tabs\StandardBrowserViewer.resx">
+      <DependentUpon>StandardBrowserViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tabs\StandardTabPage.resx">
+      <DependentUpon>StandardTabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tabs\TabBar.resx">
+      <DependentUpon>TabBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tabs\TabBarItem.resx">
+      <DependentUpon>TabBarItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\BoolBoxButton.resx">
+      <DependentUpon>BoolBoxButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\LightBarButton.resx">
+      <DependentUpon>LightBarButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\DropDown.resx">
+      <DependentUpon>DropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\DropDownList.resx">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\CoordinatesSelector.resx">
+      <DependentUpon>CoordinatesSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\TextParameterList.resx">
+      <DependentUpon>TextParameterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\TextParameter.resx">
+      <DependentUpon>TextParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\LabelBox.resx">
+      <DependentUpon>LabelBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\LabelListBox.resx">
+      <DependentUpon>LabelListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\Button.resx">
+      <DependentUpon>Button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\CheckList.resx">
+      <DependentUpon>CheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\DrawerButton.resx">
+      <DependentUpon>DrawerButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\ImportFileList.resx">
+      <DependentUpon>ImportFileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\IncrimentInt.resx">
+      <DependentUpon>IncrimentInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\RadioList.resx">
+      <DependentUpon>RadioList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\SlideButton.resx">
+      <DependentUpon>SlideButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\StandardImportFile.resx">
+      <DependentUpon>StandardImportFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\StandardImportImage.resx">
+      <DependentUpon>StandardImportImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\TabButton.resx">
+      <DependentUpon>TabButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\TileButton.resx">
+      <DependentUpon>TileButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\TileList.resx">
+      <DependentUpon>TileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\Tools\TrackBar.resx">
+      <DependentUpon>TrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WinForm\WinForm.resx">
+      <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aspose.Words.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AxInterop.WMPLib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Interop.WMPLib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MiMFa Framework.ico" />
+    <None Include="Resources\Progress_Bar_Blue.gif" />
+    <None Include="Resources\House.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\Star.png" />
+    <None Include="Resources\Button_Exit.png" />
+    <None Include="Resources\Button_WindowsState.png" />
+    <None Include="Resources\Button_Minimize.png" />
+    <None Include="Resources\Red.png" />
+    <None Include="Resources\Microsoft Excel.png" />
+    <None Include="Resources\Add Image.png" />
+    <None Include="Resources\Remove Image.png" />
+    <None Include="Resources\Import.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Home Blue.png" />
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Right.png" />
+    <None Include="Resources\Shadow_Horizontal.png" />
+    <None Include="Resources\Shadow_Vertical.png" />
+    <None Include="Resources\Tab_Radius_UnSelected.png" />
+    <None Include="Resources\Tab_Radius_Selected.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Tab_UnSelected.png" />
+    <None Include="Resources\Tab_Selected.png" />
+    <None Include="Resources\RedHole.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\LeftBorder.png" />
+    <None Include="Resources\Drawer_Top_Hover.png" />
+    <None Include="Resources\Drawer_Top.png" />
+    <None Include="Resources\Drawer_Right_Hover.png" />
+    <None Include="Resources\Drawer_Right.png" />
+    <None Include="Resources\Drawer_Left_Hover.png" />
+    <None Include="Resources\Drawer_Left.png" />
+    <None Include="Resources\Drawer_Bottom_Hover.png" />
+    <None Include="Resources\Drawer_Bottom.png" />
+    <None Include="Resources\BottomBorder.png" />
+    <None Include="Resources\TopBorder.png" />
+    <None Include="Resources\RightBorder.png" />
+    <None Include="Resources\On.png" />
+    <None Include="Resources\Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\MiMFa.csproj">
+      <Project>{adc72cd2-885e-442a-983e-0ba87b7234ef}</Project>
+      <Name>MiMFa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exclusive\MiMFa.Exclusive.csproj">
+      <Project>{7d8b3a64-3768-4150-b2c1-5a9b405b8c80}</Project>
+      <Name>MiMFa.Exclusive</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
