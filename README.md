@@ -6,6 +6,7 @@
 	</a>
 	<br><sub>The open-source Windows-based Controls and Services part of a big Dot-Net-Based Framework, to makes easy software developments.</sub>
 </h1>
+<p>The Windows-based Controls and Services part of the MiMFa .Net-based Framework, contains multiple useful Controls and Components for .net desktop software development.</p>
 <h2>Dependencies</h2>
 <ol>
   <li><a href="https://versionsof.net/framework/4.5.2">.Net Framework 4.5.2</a></li>
