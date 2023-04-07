@@ -208,7 +208,7 @@ namespace MiMFa.Controls.WinForm.DateTime
                             dc.Enabled = false;
                             dc.BackColor = AllDayBackColor;
                         }
-                    if (DateAndTime.GetDatePAC().IsSame(md)) dc.BackColor = TodayBackColor;
+                    if (DateAndTime.GetSmartDate().IsSame(md)) dc.BackColor = TodayBackColor;
                     md.IncrementDay();
                 }
             }
@@ -235,7 +235,7 @@ namespace MiMFa.Controls.WinForm.DateTime
         {
             DateAndTime.TimeZone = TimeZone;
             _FromDate.DateTimeStyle = DateAndTime;
-            _FromDate = DateAndTime.GetDatePAC();
+            _FromDate = DateAndTime.GetSmartDate();
             _FromDate.Day = 1;
             FromDate.CopyTo( _ShowOfDate);
             Saturday.Text = DateAndTime.GetDayOfWeekName(0);

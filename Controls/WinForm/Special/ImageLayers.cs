@@ -24,12 +24,12 @@ namespace MiMFa.Controls.WinForm.Special
             {
                 if (value == null || value.Length == 0) Clear();
                 else
-                    BackgroundImage = PaintService.Combine(value);
+                    ImageBox.Image = PaintService.Combine(value);
                 _Items = value;
             }
         }
-        public Image Image { get => BackgroundImage; set => BackgroundImage = value; }
-        public ImageLayout SizeMode { get => BackgroundImageLayout; set => BackgroundImageLayout = value; }
+        public Image Image { get => ImageBox.Image; set => ImageBox.Image = value; }
+        public PictureBoxSizeMode SizeMode { get => ImageBox.SizeMode; set => ImageBox.SizeMode = value; }
 
         public ImageLayers()
         {

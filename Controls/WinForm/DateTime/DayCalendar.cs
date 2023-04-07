@@ -82,7 +82,7 @@ namespace MiMFa.Controls.WinForm.DateTime
 
         #region Private Region
 
-        private SmartDate _Date = new SmartDateTime().GetDatePAC();
+        private SmartDate _Date = new SmartDateTime().GetSmartDate();
         private Highlight MH = new Highlight(Highlight.Mode.Shadow);
         private bool _WithMouseEvent = true;
 
