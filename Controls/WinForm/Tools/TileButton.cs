@@ -213,7 +213,9 @@ namespace MiMFa.Controls.WinForm.Tools
         public void UpdateLabelAutoSizeMode()
         {
             if (DesignMode) return;
-            LabelBox.MaximumSize = new Size(0, ShowImage && AutoSizeMode == AutoSizeMode.GrowOnly ? 0 : (int)(LabelBox.Font.Size * 1.5F) + LabelBox.Padding.Top + LabelBox.Padding.Bottom);
+             LabelBox.MinimumSize = new Size(0, ShowImage /*&& AutoSizeMode == AutoSizeMode.GrowOnly*/ ? 0 : (int)(LabelBox.Font.Size * 1.5F) + LabelBox.Padding.Top + LabelBox.Padding.Bottom);
+            if (ShowLabel)
+                MinimumSize = new Size(LabelBox.Size.Width+10, LabelBox.Size.Height);
             switch (LabelBox.TextAlign)
             {
                 case ContentAlignment.TopLeft:
@@ -272,7 +274,8 @@ namespace MiMFa.Controls.WinForm.Tools
 
         private void TileButton_Load(object sender, EventArgs e)
         {
-
+            if (ShowLabel)
+                MinimumSize = LabelBox.Size;
         }
     }
         #endregion

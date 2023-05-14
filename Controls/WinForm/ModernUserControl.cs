@@ -32,17 +32,18 @@ namespace MiMFa.Controls.WinForm
             var childs = ControlService.GetAllControls(this, 4).ToList();
             if (childs != null)
                 for (int i = 0; i < childs.Count; i++)
-                {
+                if(!(childs[i] is System.Windows.Forms.Panel || childs[i] is GroupBox || childs[i] is TableLayoutPanel || childs[i] is FlowLayoutPanel))
+                    {
                     Control child = childs[i];
                     //if (child.HasChildren) continue;
-                    child.Click += new EventHandler((object sender, EventArgs e) => { this.OnClick(e); });
-                    child.DoubleClick += new EventHandler((object sender, EventArgs e) => { this.OnDoubleClick(e); });
-                    child.MouseDoubleClick += new MouseEventHandler((object sender, MouseEventArgs e) => { this.OnMouseDoubleClick(e); });
-                    child.MouseDown += new MouseEventHandler((object sender, MouseEventArgs e) => { this.OnMouseDown(e); });
-                    child.MouseUp += new MouseEventHandler((object sender, MouseEventArgs e) => { this.OnMouseUp(e); });
-                    child.MouseMove += new MouseEventHandler((object sender, MouseEventArgs e) => { this.OnMouseMove(e); });
-                    child.MouseEnter += new EventHandler((object sender, EventArgs e) => { this.OnMouseEnter(e); });
-                    child.MouseLeave += new EventHandler((object sender, EventArgs e) => { this.OnMouseLeave(e); });
+                    child.Click += new EventHandler((object sender, EventArgs e) => { if (e == null) return; this.OnClick(e); e = null; });
+                    child.DoubleClick += new EventHandler((object sender, EventArgs e) => { if (e == null) return; this.OnDoubleClick(e); e = null; });
+                    child.MouseDoubleClick += new MouseEventHandler((object sender, MouseEventArgs e) => { if (e == null) return; this.OnMouseDoubleClick(e); e = null; });
+                    child.MouseDown += new MouseEventHandler((object sender, MouseEventArgs e) => { if (e == null) return; this.OnMouseDown(e); e = null; });
+                    child.MouseUp += new MouseEventHandler((object sender, MouseEventArgs e) => { if (e == null) return; this.OnMouseUp(e); e = null; });
+                    child.MouseMove += new MouseEventHandler((object sender, MouseEventArgs e) => { if (e == null) return; this.OnMouseMove(e); e = null; });
+                    child.MouseEnter += new EventHandler((object sender, EventArgs e) => { if (e == null) return; this.OnMouseEnter(e); e = null; });
+                    child.MouseLeave += new EventHandler((object sender, EventArgs e) => { if (e == null) return; this.OnMouseLeave(e); e = null; });
                 }
         }
 
