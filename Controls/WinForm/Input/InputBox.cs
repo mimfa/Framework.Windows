@@ -138,6 +138,8 @@ namespace MiMFa.Controls.WinForm.Input
         public bool FreeHeight { get; set; } = false;
         public bool FreeWidth { get; set; } = false;
         public bool Coverable { get; set; } = true;
+        public bool IsVisualizing = false;
+        public int VisualizingLevel = 0;
         public ContentAlignment TitleTextAlign
         {
             get => TitleLabel.TextAlign;
@@ -154,6 +156,8 @@ namespace MiMFa.Controls.WinForm.Input
                 CoverLabel.TextAlign = value;
             }
         }
+
+        public int ClickNumbers { get; private set; }
 
         private void Arrange()
         {
@@ -191,7 +195,8 @@ namespace MiMFa.Controls.WinForm.Input
         }
         public void ShowCover()
         {
-            if (!Coverable || DesignMode) return;
+            if (IsVisualizing || !Coverable || DesignMode) return;
+            IsVisualizing = true;
             SuspendLayout();
             _CoverLabel.Text = Text;
             if (Input != _CoverLabel) Input.Hide();
@@ -199,9 +204,12 @@ namespace MiMFa.Controls.WinForm.Input
             _CoverLabel.BringToFront();
             PerformLayout();
             ResumeLayout();
+            IsVisualizing = false;
         }
         public void HideCover()
         {
+            if (IsVisualizing) return;
+            IsVisualizing = true;
             SuspendLayout();
             if (Input != _CoverLabel)
             {
@@ -212,15 +220,16 @@ namespace MiMFa.Controls.WinForm.Input
             _CoverLabel.Hide();
             PerformLayout();
             ResumeLayout();
+            IsVisualizing = false;
         }
 
         private void InputBox_GotFocus(object sender, EventArgs e)
         {
-            HideCover();
+            if (ClickNumbers++ % 2 == 0) HideCover();
         }
         private void InputBox_LostFocus(object sender, EventArgs e)
         {
-            ShowCover();
+            if (VisualizingLevel++ % 2 == 0) ShowCover();
         }
         private void Input_TextChanged(object sender, EventArgs e)
         {
@@ -248,21 +257,27 @@ namespace MiMFa.Controls.WinForm.Input
         }
         private void RefreshButton_Click(object sender, EventArgs e)
         {
+            IsVisualizing = true;
             if (ResetClick == null) { if (Input != null) Input.Text = DefaultText; }
             else ResetClick(this, e);
             _CoverLabel_Click(sender,e);
+            IsVisualizing = false;
         }
         private void ClearButton_Click(object sender, EventArgs e)
         {
+            IsVisualizing = true;
             if (ClearClick == null) { if (Input != null) Input.Text = string.Empty; }
             else ClearClick(this, e);
             _CoverLabel_Click(sender,e);
+            IsVisualizing = false;
         }
         private void ExtraButton_Click(object sender, EventArgs e)
         {
+            IsVisualizing = true;
             if (ExtraClick == null) ShowCover();
             else ExtraClick(this,e);
             _CoverLabel_Click(sender,e);
+            IsVisualizing = false;
         }
 
         private void _CoverLabel_Click(object sender, EventArgs e)

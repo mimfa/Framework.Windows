@@ -168,3 +168,91 @@ D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Relea
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\Interop.WMPLib.dll
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ModernUserControl.resources
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Windows.Properties.Resources.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\Aspose.Words.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\AxInterop.WMPLib.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\Interop.WMPLib.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.Windows.dll.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.Windows.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.Windows.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.Exclusive.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\System.Data.SQLite.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.dll.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.Exclusive.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Release\MiMFa Framework.Exclusive.dll.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Windows.csprojAssemblyReference.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Browser.StandardWebBrowser.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ButtonPack.DefaultPartTakingButtonPack.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ButtonPack.DefaultSettingButtonPack.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ButtonPack.ProfessionalTopBorder.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ButtonPack.SimplyCloseTopBorder.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ButtonPack.StandardTopBorder.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Communication.ChatBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Data.DataGridView.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.Calendar.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.DatePicker.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.DayCalendar.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.DayDetail.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.HourPicker.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.IntervalDateSet.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.IntervalTimeSet.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.MeetTime.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.Timeframe.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.DateTime.TimePicker.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Diagram.PercentBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Input.InputBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Menu.SlidingMenu.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Menu.SortableTileMenu.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Menu.SubSlidingMenu.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Menu.TopTabMenu.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ModernUserControl.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Notification.LogBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Notification.NotificationBar.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Panel.iPanel.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Panel.ScrollablePanel.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ProgressBar.ProgressBarCycleWait.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ProgressBar.ProgressBarDoubleWithTime.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ProgressBar.ProgressBarLineWait.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.ProgressBar.ProgressBarStandardWithTime.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Ribbons.RibbonMenu.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Ribbons.RibbonPanel.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Security.RandomNumberBoard.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Special.ImageLayers.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Special.SelectSmile.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Special.ShowIndex.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Special.VeiwLogo.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tab.LevelViewer.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tab.StandardBrowserViewer.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tab.StandardTabPage.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tab.TabBar.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tab.TabBarItem.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.BoolBoxButton.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.LightBarButton.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.DropDown.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.DropDownList.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.CoordinatesSelector.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.TextParameterList.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.TextParameter.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.LabelBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.LabelListBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.Button.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.CheckList.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.DrawerButton.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.ImportFileList.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.IncrimentInt.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.RadioList.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.SlideButton.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.StandardImportFile.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.StandardImportImage.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.TabButton.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.TileButton.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.TileList.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.Tools.TrackBar.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Controls.WinForm.WinForm.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Windows.Properties.Resources.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Windows.csproj.GenerateResource.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Windows.csproj.CoreCompileInputs.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa.Windows.csproj.CopyComplete
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa Framework.Windows.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Release\MiMFa Framework.Windows.pdb
