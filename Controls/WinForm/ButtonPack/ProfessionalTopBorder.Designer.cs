@@ -56,10 +56,11 @@
             this.p_btn.Controls.Add(this.ExitButton);
             this.p_btn.Dock = System.Windows.Forms.DockStyle.Right;
             this.p_btn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.p_btn.Location = new System.Drawing.Point(256, 1);
+            this.p_btn.Location = new System.Drawing.Point(341, 1);
+            this.p_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.p_btn.Name = "p_btn";
             this.p_btn.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.p_btn.Size = new System.Drawing.Size(161, 25);
+            this.p_btn.Size = new System.Drawing.Size(215, 31);
             this.p_btn.TabIndex = 3;
             this.p_btn.DoubleClick += new System.EventHandler(this.WindowsState_Click);
             this.p_btn.Enter += new System.EventHandler(this.ProfisionalTopBorder_Enter);
@@ -71,11 +72,12 @@
             this.HelpButton.AutoSize = true;
             this.HelpButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.HelpButton.FlatAppearance.BorderSize = 0;
+            this.HelpButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.HelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HelpButton.Location = new System.Drawing.Point(1, 2);
             this.HelpButton.Margin = new System.Windows.Forms.Padding(0);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(32, 21);
+            this.HelpButton.Size = new System.Drawing.Size(43, 27);
             this.HelpButton.TabIndex = 15;
             this.HelpButton.TabStop = false;
             this.HelpButton.Text = "?";
@@ -87,11 +89,12 @@
             this.TopMostButton.AutoSize = true;
             this.TopMostButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.TopMostButton.FlatAppearance.BorderSize = 0;
+            this.TopMostButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TopMostButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TopMostButton.Location = new System.Drawing.Point(33, 2);
+            this.TopMostButton.Location = new System.Drawing.Point(44, 2);
             this.TopMostButton.Margin = new System.Windows.Forms.Padding(0);
             this.TopMostButton.Name = "TopMostButton";
-            this.TopMostButton.Size = new System.Drawing.Size(32, 21);
+            this.TopMostButton.Size = new System.Drawing.Size(43, 27);
             this.TopMostButton.TabIndex = 16;
             this.TopMostButton.TabStop = false;
             this.TopMostButton.Text = "⛤";
@@ -104,11 +107,12 @@
             this.MinimizeButton.AutoSize = true;
             this.MinimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.MinimizeButton.FlatAppearance.BorderSize = 0;
+            this.MinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MinimizeButton.Location = new System.Drawing.Point(65, 2);
+            this.MinimizeButton.Location = new System.Drawing.Point(87, 2);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(0);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(32, 21);
+            this.MinimizeButton.Size = new System.Drawing.Size(43, 27);
             this.MinimizeButton.TabIndex = 14;
             this.MinimizeButton.TabStop = false;
             this.MinimizeButton.Text = "━";
@@ -120,11 +124,12 @@
             this.WindowStateButton.AutoSize = true;
             this.WindowStateButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.WindowStateButton.FlatAppearance.BorderSize = 0;
+            this.WindowStateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.WindowStateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.WindowStateButton.Location = new System.Drawing.Point(97, 2);
+            this.WindowStateButton.Location = new System.Drawing.Point(130, 2);
             this.WindowStateButton.Margin = new System.Windows.Forms.Padding(0);
             this.WindowStateButton.Name = "WindowStateButton";
-            this.WindowStateButton.Size = new System.Drawing.Size(30, 21);
+            this.WindowStateButton.Size = new System.Drawing.Size(40, 27);
             this.WindowStateButton.TabIndex = 13;
             this.WindowStateButton.TabStop = false;
             this.WindowStateButton.Text = "🗖";
@@ -136,11 +141,12 @@
             this.ExitButton.AutoSize = true;
             this.ExitButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.ExitButton.FlatAppearance.BorderSize = 0;
+            this.ExitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(10)))));
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Location = new System.Drawing.Point(127, 2);
+            this.ExitButton.Location = new System.Drawing.Point(170, 2);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(33, 21);
+            this.ExitButton.Size = new System.Drawing.Size(44, 27);
             this.ExitButton.TabIndex = 12;
             this.ExitButton.TabStop = false;
             this.ExitButton.Text = "✕";
@@ -165,8 +171,8 @@
             this.tlp_Main.Name = "tlp_Main";
             this.tlp_Main.RowCount = 1;
             this.tlp_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tlp_Main.Size = new System.Drawing.Size(255, 25);
+            this.tlp_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tlp_Main.Size = new System.Drawing.Size(340, 31);
             this.tlp_Main.TabIndex = 7;
             this.tlp_Main.DoubleClick += new System.EventHandler(this.WindowsState_Click);
             this.tlp_Main.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMove_MouseDown);
@@ -178,11 +184,11 @@
             // 
             this.DescriptionLabel.BackColor = System.Drawing.Color.Transparent;
             this.DescriptionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DescriptionLabel.Location = new System.Drawing.Point(40, 0);
+            this.DescriptionLabel.Location = new System.Drawing.Point(54, 0);
             this.DescriptionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.DescriptionLabel.Size = new System.Drawing.Size(215, 25);
+            this.DescriptionLabel.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.DescriptionLabel.Size = new System.Drawing.Size(286, 31);
             this.DescriptionLabel.TabIndex = 10;
             this.DescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DescriptionLabel.Click += new System.EventHandler(this.ProfisionalTopBorder_Click);
@@ -199,11 +205,11 @@
             // 
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TitleLabel.Location = new System.Drawing.Point(30, 0);
+            this.TitleLabel.Location = new System.Drawing.Point(40, 0);
             this.TitleLabel.Margin = new System.Windows.Forms.Padding(0);
             this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.TitleLabel.Size = new System.Drawing.Size(10, 25);
+            this.TitleLabel.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.TitleLabel.Size = new System.Drawing.Size(14, 31);
             this.TitleLabel.TabIndex = 9;
             this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TitleLabel.DoubleClick += new System.EventHandler(this.WindowsState_Click);
@@ -216,10 +222,10 @@
             // 
             this.LogoBox.BackColor = System.Drawing.Color.Transparent;
             this.LogoBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LogoBox.Location = new System.Drawing.Point(6, 1);
+            this.LogoBox.Location = new System.Drawing.Point(8, 1);
             this.LogoBox.Margin = new System.Windows.Forms.Padding(1);
             this.LogoBox.Name = "LogoBox";
-            this.LogoBox.Size = new System.Drawing.Size(23, 23);
+            this.LogoBox.Size = new System.Drawing.Size(31, 29);
             this.LogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoBox.TabIndex = 8;
             this.LogoBox.TabStop = false;
@@ -237,7 +243,7 @@
             this.LightBox.Location = new System.Drawing.Point(0, 0);
             this.LightBox.Margin = new System.Windows.Forms.Padding(0);
             this.LightBox.Name = "LightBox";
-            this.LightBox.Size = new System.Drawing.Size(5, 25);
+            this.LightBox.Size = new System.Drawing.Size(7, 31);
             this.LightBox.TabIndex = 7;
             this.LightBox.DoubleClick += new System.EventHandler(this.WindowsState_Click);
             this.LightBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMove_MouseDown);
@@ -247,14 +253,15 @@
             // 
             // ProfessionalTopBorder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.tlp_Main);
             this.Controls.Add(this.p_btn);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProfessionalTopBorder";
             this.Padding = new System.Windows.Forms.Padding(1);
-            this.Size = new System.Drawing.Size(418, 27);
+            this.Size = new System.Drawing.Size(557, 33);
             this.Load += new System.EventHandler(this.StandardTopBorder_Load);
             this.Click += new System.EventHandler(this.ProfisionalTopBorder_Click);
             this.DoubleClick += new System.EventHandler(this.WindowsState_Click);

@@ -48,8 +48,8 @@ namespace MiMFa.Controls.WinForm.Input
             this._TitleLabel.Location = new System.Drawing.Point(0, 0);
             this._TitleLabel.Margin = new System.Windows.Forms.Padding(0);
             this._TitleLabel.Name = "_TitleLabel";
-            this._TitleLabel.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this._TitleLabel.Size = new System.Drawing.Size(29, 19);
+            this._TitleLabel.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this._TitleLabel.Size = new System.Drawing.Size(38, 23);
             this._TitleLabel.TabIndex = 2;
             this._TitleLabel.Text = "Title";
             this._TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -60,11 +60,11 @@ namespace MiMFa.Controls.WinForm.Input
             // 
             this._DescriptionLabel.AutoSize = true;
             this._DescriptionLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this._DescriptionLabel.Location = new System.Drawing.Point(29, 0);
+            this._DescriptionLabel.Location = new System.Drawing.Point(38, 0);
             this._DescriptionLabel.Margin = new System.Windows.Forms.Padding(0);
             this._DescriptionLabel.Name = "_DescriptionLabel";
-            this._DescriptionLabel.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this._DescriptionLabel.Size = new System.Drawing.Size(4, 19);
+            this._DescriptionLabel.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this._DescriptionLabel.Size = new System.Drawing.Size(6, 23);
             this._DescriptionLabel.TabIndex = 3;
             this._DescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this._DescriptionLabel.Visible = false;
@@ -76,11 +76,12 @@ namespace MiMFa.Controls.WinForm.Input
             this._ExtraButton.BackColor = System.Drawing.Color.Transparent;
             this._ExtraButton.Dock = System.Windows.Forms.DockStyle.Right;
             this._ExtraButton.FlatAppearance.BorderSize = 0;
+            this._ExtraButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this._ExtraButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ExtraButton.Location = new System.Drawing.Point(274, 0);
+            this._ExtraButton.Location = new System.Drawing.Point(369, 0);
             this._ExtraButton.Margin = new System.Windows.Forms.Padding(0);
             this._ExtraButton.Name = "_ExtraButton";
-            this._ExtraButton.Size = new System.Drawing.Size(10, 19);
+            this._ExtraButton.Size = new System.Drawing.Size(10, 23);
             this._ExtraButton.TabIndex = 4;
             this._ExtraButton.UseVisualStyleBackColor = false;
             this._ExtraButton.Visible = false;
@@ -93,11 +94,12 @@ namespace MiMFa.Controls.WinForm.Input
             this._ClearButton.BackColor = System.Drawing.Color.Transparent;
             this._ClearButton.Dock = System.Windows.Forms.DockStyle.Left;
             this._ClearButton.FlatAppearance.BorderSize = 0;
+            this._ClearButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this._ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ClearButton.Location = new System.Drawing.Point(59, 0);
+            this._ClearButton.Location = new System.Drawing.Point(72, 0);
             this._ClearButton.Margin = new System.Windows.Forms.Padding(0);
             this._ClearButton.Name = "_ClearButton";
-            this._ClearButton.Size = new System.Drawing.Size(23, 19);
+            this._ClearButton.Size = new System.Drawing.Size(26, 23);
             this._ClearButton.TabIndex = 12;
             this._ClearButton.TabStop = false;
             this._ClearButton.Text = "×";
@@ -111,11 +113,12 @@ namespace MiMFa.Controls.WinForm.Input
             this._ResetButton.BackColor = System.Drawing.Color.Transparent;
             this._ResetButton.Dock = System.Windows.Forms.DockStyle.Left;
             this._ResetButton.FlatAppearance.BorderSize = 0;
+            this._ResetButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this._ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ResetButton.Location = new System.Drawing.Point(33, 0);
+            this._ResetButton.Location = new System.Drawing.Point(44, 0);
             this._ResetButton.Margin = new System.Windows.Forms.Padding(0);
             this._ResetButton.Name = "_ResetButton";
-            this._ResetButton.Size = new System.Drawing.Size(26, 19);
+            this._ResetButton.Size = new System.Drawing.Size(28, 23);
             this._ResetButton.TabIndex = 11;
             this._ResetButton.TabStop = false;
             this._ResetButton.Text = "↻";
@@ -126,9 +129,10 @@ namespace MiMFa.Controls.WinForm.Input
             // _CoverLabel
             // 
             this._CoverLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this._CoverLabel.Location = new System.Drawing.Point(82, 0);
+            this._CoverLabel.Location = new System.Drawing.Point(98, 0);
+            this._CoverLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._CoverLabel.Name = "_CoverLabel";
-            this._CoverLabel.Size = new System.Drawing.Size(192, 14);
+            this._CoverLabel.Size = new System.Drawing.Size(271, 17);
             this._CoverLabel.TabIndex = 13;
             this._CoverLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this._CoverLabel.Click += new System.EventHandler(this._CoverLabel_Click);
@@ -147,23 +151,25 @@ namespace MiMFa.Controls.WinForm.Input
             this._MetaPanel.Controls.Add(this._ResetButton, 2, 0);
             this._MetaPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this._MetaPanel.Location = new System.Drawing.Point(0, 0);
+            this._MetaPanel.Margin = new System.Windows.Forms.Padding(4);
             this._MetaPanel.Name = "_MetaPanel";
             this._MetaPanel.RowCount = 1;
             this._MetaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this._MetaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
-            this._MetaPanel.Size = new System.Drawing.Size(82, 19);
+            this._MetaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this._MetaPanel.Size = new System.Drawing.Size(98, 23);
             this._MetaPanel.TabIndex = 14;
             // 
             // InputBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Controls.Add(this._CoverLabel);
             this.Controls.Add(this._ExtraButton);
             this.Controls.Add(this._MetaPanel);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "InputBox";
-            this.Size = new System.Drawing.Size(284, 19);
+            this.Size = new System.Drawing.Size(379, 23);
             this.Load += new System.EventHandler(this.InputBox_Shown);
             this.SizeChanged += new System.EventHandler(this.InputBox_SizeChanged);
             this.VisibleChanged += new System.EventHandler(this.InputBox_VisibleChanged);
