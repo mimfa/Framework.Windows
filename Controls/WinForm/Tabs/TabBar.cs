@@ -153,35 +153,36 @@ namespace MiMFa.Controls.WinForm.Tab
         {
             return CloseTab(CurrentTab);
         }
-        public virtual TabBarItem CloseTab(int index)
+        public virtual TabBarItem CloseTab(int index) => CloseTab(index, false);
+        public virtual TabBarItem CloseTab(int index, bool force)
         {
             if (Controls[index] is TabBarItem)
-                return CloseTab((TabBarItem)Controls[index]);
+                return CloseTab((TabBarItem)Controls[index], force);
             return default;
         }
-        public virtual TabBarItem CloseTab(string iDorNameorTitle)
+        public virtual TabBarItem CloseTab(string iDorNameorTitle) => CloseTab(iDorNameorTitle, false);
+        public virtual TabBarItem CloseTab(string iDorNameorTitle, bool force)
         {
             return
-                CloseTab(Tabs.FirstOrDefault(v => v.ID == iDorNameorTitle)) ??
-                CloseTab(Tabs.FirstOrDefault(v => v.Name == iDorNameorTitle)) ??
-                CloseTab(Tabs.FirstOrDefault(v=>v.Text == iDorNameorTitle));
+                CloseTab(Tabs.FirstOrDefault(v => v.ID == iDorNameorTitle), force) ??
+                CloseTab(Tabs.FirstOrDefault(v => v.Name == iDorNameorTitle), force) ??
+                CloseTab(Tabs.FirstOrDefault(v=>v.Text == iDorNameorTitle), force);
         }
-        public virtual TabBarItem CloseTab(TabBarItem item)
+        public virtual TabBarItem CloseTab(TabBarItem item, bool force = false)
         {
             if (item == default) return item;
-            if (item.AllowClose)
-                item.Close();
+            if (item.AllowClose || force) item.Close();
             return item;
         }
         public virtual TabBarItem CloseAllTabs() => CloseAllTabs(false);
-        public virtual TabBarItem[] CloseAllTabs(params TabBarItem[] items) => (from v in items select CloseTab(v)).ToArray();
+        public virtual TabBarItem[] CloseAllTabs(params TabBarItem[] items) => (from v in items select CloseTab(v, true)).ToArray();
         public virtual TabBarItem CloseAllTabs(bool force)
         {
             IsUpdating = true;
             for (int i = Controls.Count - 1; i >= 0; i--)
-                return CloseTab(i);
+                CloseTab(i, force);
             IsUpdating = false;
-            return default;
+            return CurrentTab;
         }
         public virtual TabBarItem GoToTab(int index)
         {
