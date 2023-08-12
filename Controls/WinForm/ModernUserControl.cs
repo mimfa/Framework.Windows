@@ -29,7 +29,7 @@ namespace MiMFa.Controls.WinForm
         public void SendEventsToChildren()
         {
             if (this.DesignMode) return;
-            var childs = ControlService.GetAllControls(this, 4).ToList();
+            var childs = ControlService.GetAllControls(this, 4).Distinct().ToList();
             if (childs != null)
                 for (int i = 0; i < childs.Count; i++)
                 if(!(childs[i] is System.Windows.Forms.Panel || childs[i] is GroupBox || childs[i] is TableLayoutPanel || childs[i] is FlowLayoutPanel))

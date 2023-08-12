@@ -205,7 +205,7 @@ namespace MiMFa.Controls.WinForm.Tools
         protected virtual void SetAllEventParentToControls()
         {
             if (this.DesignMode) return;
-            var childs = ControlService.GetFinalControls(this,4).ToList();
+            var childs = ControlService.GetFinalControls(this,4).Distinct().ToList();
             if (childs != null)
                 for (int i = 0; i < childs.Count; i++)
                 {
