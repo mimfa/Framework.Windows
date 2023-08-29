@@ -159,6 +159,7 @@ namespace MiMFa.Controls.WinForm.Input
 
         public int ClickNumbers { get; private set; }
 
+
         private void Arrange()
         {
             if (Parent == null || !Created || !IsHandleCreated) return;

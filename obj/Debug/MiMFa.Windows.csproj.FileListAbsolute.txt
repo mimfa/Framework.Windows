@@ -181,7 +181,6 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\MiMFa Fr
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\MiMFa Framework.dll.config
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\MiMFa Framework.Exclusive.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\MiMFa Framework.Exclusive.dll.config
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Windows.csprojAssemblyReference.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Controls.WinForm.Browser.StandardWebBrowser.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Controls.WinForm.ButtonPack.DefaultPartTakingButtonPack.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Controls.WinForm.ButtonPack.DefaultSettingButtonPack.resources
@@ -256,3 +255,4 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Wi
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Windows.csproj.CopyComplete
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa Framework.Windows.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa Framework.Windows.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Windows.csproj.AssemblyReference.cache

@@ -27,7 +27,6 @@ namespace MiMFa.Controls.WinForm.Tools
         private bool _InvertImage = false;
         private bool _ThisSelected = false;
         private BorderStyle prevBS;
-
         #endregion
 
         #region Property
@@ -241,7 +240,11 @@ namespace MiMFa.Controls.WinForm.Tools
                     break;
             }
         }
-    
+        protected override void SendEventsToChildren(params Control[] childs)
+        {
+            base.SendEventsToChildren(ImageBox, LabelBox, tlp_Main);
+        }
+
         #region Private Region
         private void Action_Click(object sender, EventArgs e)
         {
