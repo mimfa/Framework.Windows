@@ -256,3 +256,6 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Wi
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa Framework.Windows.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa Framework.Windows.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\obj\Debug\MiMFa.Windows.csproj.AssemblyReference.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\HtmlAgilityPack.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\HtmlAgilityPack.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Windows\bin\Debug\HtmlAgilityPack.xml
