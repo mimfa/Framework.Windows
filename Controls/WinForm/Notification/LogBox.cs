@@ -41,22 +41,32 @@ namespace MiMFa.Controls.WinForm.Notification
                 case MessageMode.Null:
                     if (AllowSubjectsDialog)
                        Notice(DialogService.ShowMessage(mode, message)+"");
+                    if (AllowSendEmail && AllowSubjectsEmail)
+                        Email(message, "Subject");
                     break;
                 case MessageMode.Warning:
                     if (AllowWarningsDialog)
                        Notice(DialogService.ShowMessage(mode, message)+"");
+                    if (AllowSendEmail && AllowWarningsEmail)
+                        Email(message, "Warning");
                     break;
                 case MessageMode.Success:
                     if (AllowSuccessesDialog)
                        Notice(DialogService.ShowMessage(mode, message)+"");
+                    if (AllowSendEmail && AllowSuccessesEmail)
+                        Email(message, "Success");
                     break;
                 case MessageMode.Error:
                         if (AllowErrorsDialog) 
                        Notice(DialogService.ShowMessage(mode, message)+"");
+                    if (AllowSendEmail && AllowErrorsEmail)
+                        Email(message, "Error");
                     break;
                 default:
                     if (AllowMessagesDialog)
                        Notice(DialogService.ShowMessage(mode, message)+"");
+                    if (AllowSendEmail && AllowMessagesEmail)
+                        Email(message, "Message");
                     break;
             }
             Logged(this, mode,message) ;
@@ -98,6 +108,33 @@ namespace MiMFa.Controls.WinForm.Notification
         public bool AllowMessagesDialog { get;  set; } = false;
         [Browsable(false)]
         public bool AllowSubjectsDialog { get;  set; } = false;
+
+        public string EmailServer { get; set; } = "";
+        public string EmailSource { get; set; } = "";
+        public string EmailUserName { get; set; } = "";
+        public string EmailPassword { get; set; } = "";
+        public string EmailDestination { get; set; } = "";
+
+        [Browsable(false)]
+        public bool AllowSendEmail =>
+            !(
+                string.IsNullOrWhiteSpace(EmailServer) ||
+                string.IsNullOrWhiteSpace(EmailUserName) ||
+                string.IsNullOrWhiteSpace(EmailPassword) ||
+                string.IsNullOrWhiteSpace(EmailSource) ||
+                string.IsNullOrWhiteSpace(EmailDestination)
+            );
+        [Browsable(false)]
+        public bool AllowErrorsEmail { get; set; } = false;
+        [Browsable(false)]
+        public bool AllowWarningsEmail { get; set; } = false;
+        [Browsable(false)]
+        public bool AllowSuccessesEmail { get; set; } = false;
+        [Browsable(false)]
+        public bool AllowMessagesEmail { get; set; } = false;
+        [Browsable(false)]
+        public bool AllowSubjectsEmail { get; set; } = false;
+
         [Browsable(false)]
         public bool AllowBeep { get;  set; } = false;
         [Browsable(false)]
@@ -281,7 +318,7 @@ namespace MiMFa.Controls.WinForm.Notification
             if (AllowBeep) Console.Beep(3500, 300);
             ControlService.SetControlThreadSafe(MainStripMenu, () => tsl_Error.Text = ++ErrorCount + "");
             SetLogLines();
-            OnLogged(  MessageMode.Error, message);
+            OnLogged(MessageMode.Error, message);
         }
         public void Message(string message) => Write(GetTime() + ":\t" + Translate(message), false);
         public void Warning(string message) => WriteWarning(GetTime() + ":\t" + Translate(message), false);
@@ -295,7 +332,7 @@ namespace MiMFa.Controls.WinForm.Notification
             if (AllowBeep) Console.Beep(3000, 150);
             ControlService.SetControlThreadSafe(MainStripMenu, () => tsl_Warning.Text = ++WarningCount + "");
             SetLogLines();
-            OnLogged(  MessageMode.Warning, message);
+            OnLogged(MessageMode.Warning, message);
         }
         public void WriteLine(string message) => Write(message, false);
         public void WriteLine(params string[] messages) => WriteLine(messages);
@@ -327,6 +364,11 @@ namespace MiMFa.Controls.WinForm.Notification
             if (AllowNotice)
                 ControlService.SetControlThreadSafe(NotificationBox, () => NotificationBox.Text = message );
             SetLogLines();
+        }
+        public void Email(string message, string subject)
+        {
+            try { InternetService.SendEmail(EmailUserName, EmailPassword, EmailServer, EmailSource, EmailDestination, message, subject); }
+            catch(Exception ex) { var pass = EmailPassword; EmailPassword = null; Error(ex); EmailPassword = pass; }
         }
 
         public virtual string Translate(string message)
@@ -472,6 +514,47 @@ namespace MiMFa.Controls.WinForm.Notification
         private void RTB_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             if (LinkClicked != null) LinkClicked(sender,e);
+        }
+
+        private void tsmi_ActiveEmail_For_Subjects_CheckedChanged(object sender, EventArgs e)
+        {
+            AllowSubjectsEmail = tsmi_ActiveEmail_For_Subjects.Checked;
+        }
+        private void tsmi_ActiveEmail_For_Messages_CheckedChanged(object sender, EventArgs e)
+        {
+            AllowMessagesEmail = tsmi_ActiveEmail_For_Messages.Checked;
+        }
+        private void tsmi_ActiveEmail_For_Successed_CheckedChanged(object sender, EventArgs e)
+        {
+            AllowSuccessesEmail = tsmi_ActiveEmail_For_Successed.Checked;
+        }
+        private void tsmi_ActiveEmail_For_Warnings_CheckedChanged(object sender, EventArgs e)
+        {
+            AllowWarningsEmail = tsmi_ActiveEmail_For_Warnings.Checked;
+        }
+        private void tsmi_ActiveEmail_For_Errors_CheckedChanged(object sender, EventArgs e)
+        {
+            AllowErrorsEmail = tsmi_ActiveEmail_For_Errors.Checked;
+        }
+
+        private void configToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ib_Email_Server.Input.Text = EmailServer;
+            ib_Email_From.Input.Text = EmailSource;
+            ib_Email_UserName.Input.Text = EmailUserName;
+            ib_Email_Password.Input.Text = EmailPassword;
+            ib_Email_To.Input.Text = EmailDestination;
+            p_Config.Visible = !p_Config.Visible;
+        }
+
+        private void btn_Config_Done_Click(object sender, EventArgs e)
+        {
+            EmailServer = ib_Email_Server.Input.Text;
+            EmailSource = ib_Email_From.Input.Text;
+            EmailUserName = ib_Email_UserName.Input.Text;
+            EmailPassword= ib_Email_Password.Input.Text;
+            EmailDestination = ib_Email_To.Input.Text;
+            p_Config.Visible = !p_Config.Visible;
         }
     }
 }
