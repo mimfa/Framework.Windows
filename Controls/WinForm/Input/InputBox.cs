@@ -114,16 +114,20 @@ namespace MiMFa.Controls.WinForm.Input
         public System.Windows.Forms.Button ClearButton => _ClearButton;
         public System.Windows.Forms.Button ResetButton => _ResetButton;
         public System.Windows.Forms.Label CoverLabel => _CoverLabel;
-        //public new bool AutoSize
-        //{
-        //    get => _AutoSize; 
-        //    set
-        //    {
-        //        _AutoSize = value;
-        //        Arrange();
-        //    }
-        //}
-        //private bool _AutoSize;
+        public new bool AutoSize
+        {
+            get => base.AutoSize;
+            set
+            {
+                base.AutoSize = value;
+                Arrange();
+                if(!base.AutoSize)
+                {
+                    MinimumSize = new Size(0, 0);
+                    MaximumSize = new Size(0, 0);
+                }    
+            }
+        }
         public BorderStyle CoverBorderStyle { get => CoverLabel.BorderStyle; set=> CoverLabel.BorderStyle= value; }
         public bool HandleKeys { get; set; } = true;
         public bool AutoArrange
@@ -177,13 +181,31 @@ namespace MiMFa.Controls.WinForm.Input
                     if (item is InputBox)
                     {
                         var box = (InputBox)item;
-                        var mh = box.TitleLabel.Padding.Top + box.TitleLabel.Padding.Bottom;
-                        if (box.AutoSize) box.MinimumSize =
-                               new Size( 0, MathService.Maximum(box.TitleLabel.Height + mh, maxHeight + mh) );
-                        if (box.TitleLabel.Width < maxWidth && box.AutoArrange)
+                        if (box.AutoArrange)
                         {
-                            //box.TitleLabel.AutoSize = false;
-                            box.TitleLabel.MinimumSize = new Size(maxWidth, maxHeight);
+                            var mh = box.TitleLabel.Padding.Top + box.TitleLabel.Padding.Bottom;
+                            var mw = box.TitleLabel.Padding.Left + box.TitleLabel.Padding.Right;
+                            bool isw = !box.FreeWidth && box.TitleLabel.Width <= maxWidth;
+                            bool ish = !box.FreeHeight && box.TitleLabel.Height <= maxHeight;
+                            if (isw || ish)
+                            {
+                                if (box.AutoSize)
+                                    if (isw && ish)
+                                        box.MinimumSize = new Size(MathService.Maximum(box.TitleLabel.Width + mw, maxWidth + mw), MathService.Maximum(box.TitleLabel.Height + mh, maxHeight + mh));
+                                    else if (isw)
+                                        box.MinimumSize = new Size(MathService.Maximum(box.TitleLabel.Width + mw, maxWidth + mw), 0);
+                                    else if (ish)
+                                        box.MinimumSize = new Size(0, MathService.Maximum(box.TitleLabel.Height + mh, maxHeight + mh));
+                                box.TitleLabel.AutoSize = false;
+                                box.TitleLabel.MinimumSize = new Size(maxWidth, maxHeight);
+                            }
+                        }
+                        else
+                        {
+                            box.MinimumSize = new Size(0, 0);
+                            box.TitleLabel.AutoSize = false;
+                            box.TitleLabel.MinimumSize = new Size(0, 0);
+                            box.TitleLabel.AutoSize = true;
                         }
                     }
             }
