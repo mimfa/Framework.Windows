@@ -221,7 +221,8 @@ namespace MiMFa.Controls.WinForm.Input
             if (IsVisualizing || !Coverable || DesignMode) return;
             IsVisualizing = true;
             SuspendLayout();
-            _CoverLabel.Text = Text;
+            if(Input is TextBox && ((TextBox)Input).PasswordChar != '\0') _CoverLabel.Text = string.Join("",Statement.Loop(Text.Length,()=> ((TextBox)Input).PasswordChar));
+            else _CoverLabel.Text = Text;
             if (Input != _CoverLabel) Input.Hide();
             _CoverLabel.Show();
             _CoverLabel.BringToFront();
